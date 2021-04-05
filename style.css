@@ -1,0 +1,577 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:white;
+    font-family: 'Oswald', sans-serif;
+}
+.navbar{
+   display: flex;
+   align-items: center;
+   padding: 20px;
+
+}
+.profile{
+    width: 130px;
+    height: 130px;
+    
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding :0;
+    
+  }
+nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 2;
+
+    
+    
+  }
+
+  ul li a {
+    font-size: 17px;
+    color: #000;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    
+    
+  }
+
+  ul li a.active {
+    background-color: #3f7b9e;
+    color:
+     white;
+  }
+
+  ul li a:hover{
+    background-color:  #3f7b9e;
+    color: white;
+  }
+
+  .container{
+      background-color: white;
+      max-width: 1350px;
+      margin: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.colm-2{
+    flex-basis: 50%;
+    min-width: 300px;
+
+}
+
+.colm-2 img{
+     width: 80%;
+     padding: 50px 0;
+     transition: width 2s,transform 1s;
+
+}
+
+.colm-2 img:hover{
+    width:100%;
+} 
+.colm-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background:  linear-gradient(90deg,#524bd1,#5e8dd1,#42a3b6);
+    color:black;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: width 0.5s,ease-in-out;
+    transition: font-size 0.5s ;
+
+}
+
+.btn:hover{
+   
+        width:20%;
+        font-size: 20px;
+
+}
+
+.categories{
+    margin: 50px 0;
+
+}
+.colm-3{
+    flex-basis: 30%;
+     min-width: 200px;
+     margin-bottom: 10px;
+     transition: background 0.5s;
+}
+.colm-3 img{
+
+   width: 100%;
+ 
+
+}
+.colm-3:hover{
+   background: linear-gradient(90deg,#524bd1,#5e8dd1,#42a3b6) ;
+   cursor: pointer;
+ 
+ }
+
+
+.small-container{
+   max-width: 1100px;
+   margin: auto;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+hr{
+    height: 1px;
+    background: black;
+    margin: auto;
+    margin-bottom: 20px;
+    
+    
+
+}
+
+.card-in{
+       
+    padding: 0 4%;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: .5s;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+   width: 300px;
+   height: 250px;
+   background:#d5e6f0;
+   margin: 10px;
+   border-radius: 10px;
+   box-shadow:#d6e9f5;
+   border: 2px solid white;
+   font-size:  16px;
+   position: relative;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   cursor: pointer;
+   transition: all 0.3s ease;
+
+
+}
+.card2{
+    width: 300px;
+    height: 270px;
+    background:#d5e6f0;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow:#d6e9f5;
+    border: 2px solid white;
+    font-size:  16px;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.care img{
+    width: 300px;
+    height: 250px;
+}
+
+.icon{
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width:80px;
+    background: #d6e9f5 ;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: opx;
+   background-size: 200px;
+   transition: all 0.5s;
+   font-size: 40px;
+}
+
+.card .title{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+
+}
+.card2 .title{
+    width: 100%;
+    margin: 30px 10px;
+    text-align: center;
+    margin: 30px 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.card .text{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    color:black;
+    margin-bottom: 10px;
+    text-decoration: bold;
+   
+
+}
+.card2 .text{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    color:black;
+    margin-bottom: 10px;
+    text-decoration: bold;
+}
+
+.card:hover{
+     height: 270px;
+     background-color: #2489bb;
+
+}
+.card2:hover{
+    height: 400px;
+    background-color: #2489bb;
+
+}
+
+.card:hover .text{
+    transition: all 0.5s ease;
+    opacity: 1;
+    
+}
+.card2:hover .text{
+    transition: all 0.5s ease;
+    opacity: 1;
+    
+}
+.icon:hover{
+    background-position: -120px;
+    transition:all 0.5s ease;
+    background-color: rgb(122, 190, 94);
+}
+
+.box{
+    width: 100%;
+    height: 500px;
+    margin:auto;
+    background-image: url(patient.jpg);
+    background-size: cover;
+    opacity:1;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.content-area{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content-div{
+    text-align: center;
+}
+.content-div h1{
+    font-size: 50px;
+    opacity: 0;
+
+}
+
+.content-div p{
+    font-size:30px;
+    opacity:0;
+}
+.content-div a{
+    display: inline-block;
+    background:  linear-gradient(90deg,#524bd1,#5e8dd1,#42a3b6);
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0;
+    font-size: 20px;
+    width: 80px;
+    transition: width 0.3s ease-in-out;
+}
+
+.box:hover h1{
+    opacity: 1;
+}
+
+.box:hover p{
+    opacity: 1;
+}
+
+.content-area:hover a{
+
+    opacity: 1;
+     width: 100px;
+    
+}
+
+.loginbody{
+     margin: 0;
+     padding: 0;
+     background: url(background.jpg);
+     background-size: cover;
+     background-position: center;
+     width: 100%;
+     height: 700px;
+     margin-bottom: 20px;
+}
+.loginbox{
+    width:350px;
+    height:450px;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    position: absolute;
+    box-sizing: border-box;
+    margin-left: 650px;
+    margin-top: 120px;
+    padding: 15px;
+    
+    
+}
+.user{
+   
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width:80px;
+    background: #6ca3c5 ;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: opx;
+    background-size: 200px;
+    transition: all 0.5s;
+    font-size: 40px;
+    margin-top: 15px;
+    
+}
+h2{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 25px;
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[ type="text"],input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background:transparent;
+    outline: none;
+    height:40px;
+    color:white;
+    font-size: 13px;
+
+
+
+}
+
+.loginbox input[ type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:#6ca3c5;
+    color: #fff;
+    font-size: 15px ;
+    text-align: center;
+}
+.loginbox input[ type="submit"]:hover{
+    background: rgb(31, 88, 55);
+    cursor: pointer;
+
+
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.testimonial{
+     padding: 40px 0;
+     background: #fff;
+     color: #0f0f0f;
+     text-align: center ;
+}
+
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col{
+    flex: 33.33%;
+    max-width: 33.33% ;
+    box-sizing: border-box ;
+    padding: 15px;
+
+    
+}
+.testimonials{
+    background: white;
+    padding: 30px;
+}
+
+.testimonials img{
+    width: 140px;
+    height: 150px;
+    border-radius: 50%;
+}
+ 
+.name{
+
+    font-size:20px ;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.stars{
+    color: rgb(127, 204, 255)55, 212);
+    margin: 20px;
+
+}
+
+.center a{
+     
+    align-items: center;
+    margin-bottom: 20px;
+   
+}
+
+footer{
+    background: #3f7b9e;
+    height: auto;
+    width: 100%;
+    
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+ .footer-content h3{
+     font-size: 1.8rem;
+     font-weight: 400;
+     line-height: 3rem;
+ }
+
+ .footer-content p{
+     max-width: 500px;
+     margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    
+    }
+
+    .socials{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+
+    }
+
+    .socials a i{
+      font-size: 1.1 rem;
+
+    }
+    .footer-buttom {
+        margin: o auto;
+        text-align : center;
+       width: 100%;
+       padding: 20px 0 ;
+       text-transform: capitalize;
+
+    }
+
+    .footer-buttom span{
+        text-transform: uppercase;
+        opacity: 0.7;
+     font-weight: 200 ;
+    }
+
